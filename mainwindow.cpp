@@ -31,10 +31,6 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_pushButton_clicked()
-{
-
-}
 void MainWindow::cargar_mundo1()
 {
 
