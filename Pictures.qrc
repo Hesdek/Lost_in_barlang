@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>Pictures/fondo_menu.png</file>
         <file>Pictures/nivel_1.png</file>
+        <file>Pictures/nivel_2.png</file>
+        <file>Pictures/nivel_3.png</file>
     </qresource>
 </RCC>

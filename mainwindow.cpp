@@ -7,22 +7,16 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     view = new QGraphicsView(this);
-
-   /* this->window()->showFullScreen();
-    if (this->width() <= 1280 && this->height() <= 720) {
-        this->showFullScreen();
-        //this->showMaximized();
-    }
-    else {
-        this->setMaximumSize(1280,720);
-        this->setMinimumSize(1280,720);
-        this->showMaximized();
-    }
-*/
     view->resize(1280,720);
     view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-   cargar_mundo1();
+    this->setMaximumSize(1280,720);
+    this->setMinimumSize(1280,720);
+    this->showMaximized();
+    //Se construye el nivel seleccionado
+    N= "2"; //Selecciona el nivel a comenzar
+    nivel(N);
+
 }
 
 MainWindow::~MainWindow()
@@ -30,7 +24,18 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
+void MainWindow::nivel(std::string N_)
+{
+    if(N_=="1"){
+        cargar_mundo1();
+    }
+    else if(N_=="2"){
+        cargar_mundo2();
+    }
+    else if(N_=="3"){
+        cargar_mundo3();
+    }
+}
 void MainWindow::cargar_mundo1()
 {
 
@@ -38,3 +43,19 @@ void MainWindow::cargar_mundo1()
     view->setScene(escenario->getMundo());
 
 }
+void MainWindow::cargar_mundo2()
+{
+
+    escenario2 = new map2(":/Pictures/nivel_2.png");
+    view->setScene(escenario2->getMundo());
+
+}
+
+void MainWindow::cargar_mundo3()
+{
+
+    escenario3 = new map3(":/Pictures/nivel_3.png");
+    view->setScene(escenario3->getMundo());
+
+}
+

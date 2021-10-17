@@ -15,6 +15,7 @@ SOURCES += \
     mainwindow.cpp \
     map.cpp \
     map2.cpp \
+    map3.cpp \
     menu.cpp \
     physics.cpp \
     player.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     mainwindow.h \
     map.h \
     map2.h \
+    map3.h \
     physics.h \
     player.h \
     spiderboss.h
