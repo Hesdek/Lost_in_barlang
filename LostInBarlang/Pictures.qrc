@@ -5,5 +5,6 @@
         <file>Pictures/nivel_2.png</file>
         <file>Pictures/nivel_3.png</file>
         <file>Coli/Coordenadas_map_1.txt</file>
+        <file>Coli/pinchos_map_2.txt</file>
     </qresource>
 </RCC>
