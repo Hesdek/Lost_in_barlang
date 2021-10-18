@@ -7,6 +7,7 @@
 #include "map.h"
 #include "map2.h"
 #include "map3.h"
+#include "datareading.h"
 #include <QGraphicsScene>
 #include <QGraphicsItem>
 #include <QGraphicsView>
@@ -15,6 +16,7 @@
 #include <QWidget>
 #include <math.h>
 #include <string>
+#include "player.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -32,7 +34,7 @@ public:
      void cargar_mundo1();
      void cargar_mundo2();
      void cargar_mundo3();
-
+//    void move(direction dir,QVector<collision *>*contenedor);
 private:
     Ui::MainWindow *ui;
 //niveles
@@ -40,6 +42,7 @@ private:
     map *escenario;
     map2 *escenario2;
     map3 *escenario3;
+ //   DataReading *lector;
 
 
 };

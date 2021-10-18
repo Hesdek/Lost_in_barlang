@@ -2,8 +2,6 @@
 #define MAP_H
 
 #include <QString>
-#include <QFile>
-#include <QTextStream>
 #include <QGraphicsScene>
 
 class map

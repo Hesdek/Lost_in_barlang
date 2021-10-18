@@ -3,6 +3,8 @@
 
 #include <QObject>
 #include <QGraphicsItem>
+#include "datareading.h"
+
 enum direction {
     Left,
     Right,
@@ -13,9 +15,13 @@ enum direction {
 class Player
 {
 public:
-    explicit Player(QWidget *parent = nullptr);
+    Player();
     ~Player();
-     int vida_one  = 100;//vida del jugador
+    //void cargarmundo(int a);
+
+private:
+//    DataReading *lector;
+    int vida_one  = 100;//vida del jugador
 };
 
 #endif // PLAYER_H

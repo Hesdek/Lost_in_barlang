@@ -12,6 +12,7 @@ CONFIG += c++11
 SOURCES += \
     bat.cpp \
     collision.cpp \
+    datareading.cpp \
     main.cpp \
     mainwindow.cpp \
     map.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     Menu.h \
     bat.h \
     collision.h \
+    datareading.h \
     mainwindow.h \
     map.h \
     map2.h \
